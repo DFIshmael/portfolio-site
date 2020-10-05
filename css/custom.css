@@ -1,0 +1,37 @@
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 4rem !important;
+  color: #8A89A9;
+}
+
+.nav-item, .nav-link {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem !important;
+  color: white;
+}
+
+.h2 {
+  font-family: 'Satisfy', cursive;
+  color: #8A89A9;
+  font-size: 3rem;
+}
+
+.item {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.50rem;
+  color: white;
+}
+
+.color {
+  color: #8A89A9;
+}
+
+.about {
+  color: black;
+}
+
+.border {
+  border-color: #8A89A9 !important;
+  border-width: 8px !important;
+}
+/*# sourceMappingURL=custom.css.map */
