@@ -1,26 +1,36 @@
+
+
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
 h1{
     font-family: 'Satisfy', cursive;
 // font-family: 'Oleo Script Swash Caps', cursive;
-font-size: 4rem !important;
+font-size: 4em !important;
 color:#8A89A9 ;
+display:block;
 
 }
 
  .nav-item , .nav-link{
 font-family: 'Josefin Sans', sans-serif;
-font-size: 1rem !important;
+font-size: 1em !important;
 color: white;
 }
 
 .h2{
     font-family: 'Satisfy', cursive;
     color:#8A89A9;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .item{
     font-family: 'Josefin Sans', sans-serif;
-    font-size:1.50rem;
+    font-size:1.50em;
     color:white;
 }
 
@@ -31,9 +41,37 @@ color: white;
 
 .about{
     color:black;
+    
 }
 
 .border {
 border-color:#8A89A9 !important;
 border-width:8px !important;
+}
+
+.aboutText{
+    line-height: 1.75em;
+    font-size:1.25em ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.background-img .container-fluid{
+    background: rgb(0, 0,0.2);
+    opacity: .8;
+    height: 100vh;
+    width: 100vw;
+
+}
+// .background-img{
+//     background-image: url(/images/zebra-body.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     height: 100vh;
+// }
+
+@media only screen and (max-width: 500px){
+body, html {
+    width: 100%;
+    overflow-x: hidden !important;
+}
 }
