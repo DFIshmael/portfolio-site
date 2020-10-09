@@ -3,9 +3,17 @@ body, html {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100vw;
+    -ms-overflow-style: none;  /* Internet Explorer 10+  no scrollbar*/
+    scrollbar-width: none;  /* Firefox  no scrollbar*/
+}
+    
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+        
   }
+  
   .navbar-brand{
       color:#05299E;
   }
@@ -13,7 +21,8 @@ body, html {
   
   h1 {
     font-family: 'Satisfy', cursive;
-    font-size: 3em !important;
+    // font-size: calc(24px + 2vw) !important;
+    font-size:calc(1.5rem + 2vw) !important;
     color: #05299E;
     display: block;
   }
@@ -21,7 +30,8 @@ body, html {
   h2 {
     font-family: 'Satisfy', cursive;
     color: #05299E;
-    font-size: calc(18px + vw);
+    // font-size: calc(18px + 2vw);
+    font-size: calc(1.125rem + 2vw);
   }
   .nav-item, .nav-link {
     font-family: 'Josefin Sans', sans-serif;
@@ -41,8 +51,16 @@ body, html {
   
   .about {
     color: black;
-    font-size: calc(18px + 2vw);
+    // font-size: calc(18px + 2vw);
+    font-size: calc(1.125rem + 2vw);
     font-family: 'Satisfy', cursive;
+  }
+  
+  .aboutText {
+    line-height: 1.75em;
+    font-family: 'Josefin Sans', sans-serif;
+    // font-size: calc(14px + 1vw);
+    font-size: calc(0.875rem + 1vw);
   }
   
   .border-top,.border-primary {
@@ -50,11 +68,7 @@ body, html {
     border-width: 8px !important;
   }
   
-  .aboutText {
-    line-height: 1.75em;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: calc(16px + 1vw);
-  }
+  
   
 .card-img{
     background-position: center;
@@ -65,10 +79,10 @@ body, html {
     opacity: .5;
 }
 .skill-sub{
-    
     font-family: 'Josefin Sans', sans-serif,bold 700;
     font-weight: bolder;
-    font-size: calc(12px + 1vw);
+    // font-size: calc(12px + 1vw);
+    font-size: calc(0.75rem + 1vw);
 }
 
   
@@ -85,5 +99,6 @@ body, html {
       border-bottom: 1px solid white ;
       text-align: center;
       overflow-x: hidden !important;
+      
   }
 }
