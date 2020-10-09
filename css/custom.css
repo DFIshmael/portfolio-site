@@ -7,17 +7,21 @@ body, html {
   width: 100vw;
 }
 
+.navbar-brand {
+  color: #05299E;
+}
+
 h1 {
   font-family: 'Satisfy', cursive;
   font-size: 3em !important;
-  color: #8A89A9;
+  color: #05299E;
   display: block;
 }
 
-.h2 {
+h2 {
   font-family: 'Satisfy', cursive;
-  color: #8A89A9;
-  font-size: calc(18px + 2vw);
+  color: #05299E;
+  font-size: calc(18px + vw);
 }
 
 .nav-item, .nav-link {
@@ -28,12 +32,12 @@ h1 {
 
 .item {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: calc(16px + 1vw);
-  color: white;
+  font-size: calc(14px + 1vw);
+  color: whitesmoke;
 }
 
 .color {
-  color: #8A89A9;
+  color: #05299E;
 }
 
 .about {
@@ -42,8 +46,8 @@ h1 {
   font-family: 'Satisfy', cursive;
 }
 
-.border {
-  border-color: #8A89A9 !important;
+.border-top, .border-primary {
+  border-color: whitesmoke !important;
   border-width: 8px !important;
 }
 
@@ -51,6 +55,21 @@ h1 {
   line-height: 1.75em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: calc(16px + 1vw);
+}
+
+.card-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  opacity: .5;
+}
+
+.skill-sub {
+  font-family: 'Josefin Sans', sans-serif,bold 700;
+  font-weight: bolder;
+  font-size: calc(12px + 1vw);
 }
 
 @media only screen and (max-width: 500px) {
@@ -63,8 +82,9 @@ h1 {
 @media only screen and (max-width: 500px) {
   .nav-item, .nav-link {
     display: block;
-    border-bottom: 1px solid #8A89A9;
+    border-bottom: 1px solid white;
     text-align: center;
+    overflow-x: hidden !important;
   }
 }
 /*# sourceMappingURL=custom.css.map */
